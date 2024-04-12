@@ -1,2 +1,2 @@
 # narproxy
-narproxy - A Network Address Resolution Proxy that supports both ARP (IPv4) and NDP (IPv6)
+A (n)etwork (a)ddress (r)esolution Proxy that supports both ARP / IPv4 and NDP / IPv6.
