@@ -319,7 +319,7 @@ class IPv6Utils:
         ipv6_obj = IPv6Address(ipv6_addr)
         last_24_bits = ipv6_obj.packed[-3:]
         solicited_node_prefix_obj = IPv6Address(
-            IPV6_SOLICITED_NODE_PREFIX.split("/")[0]
+            IPV6_SOLICITED_NODE_PREFIX.split('/', maxsplit=1)[0]
         )
         solicited_node_address = solicited_node_prefix_obj + int.from_bytes(
             last_24_bits, byteorder="big"
