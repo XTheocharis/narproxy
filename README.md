@@ -1,6 +1,6 @@
 # narproxy - Network Address Response Proxy
 
-narproxy is a Python script that acts as a proxy for responding to network address resolution requests (ARP and NDP) on behalf of specified target IP addresses or networks. It is designed for and tested on OPNsense, pfSense, and FreeBSD 13.x systems. It can be used to simulate the presence of devices on a network or to handle address resolution for virtual or containerized environments.  **Specifically, narproxy can be helpful for clients transitioning between LAN and VPN connections on FreeBSD-based OPNsense routers.**
+narproxy is a Python script that acts as a proxy for responding to network address resolution requests (ARP and NDP) on behalf of specified target IP addresses or networks. It is designed for and tested on OPNsense, pfSense, and FreeBSD 13.x systems. It can be used to simulate the presence of devices on a network or to handle address resolution for virtual or containerized environments.  **Specifically, narproxy can be helpful for clients transitioning between LAN and VPN connections on FreeBSD-based routers.**
 
 ## Features
 
