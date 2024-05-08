@@ -31,8 +31,8 @@
 *   `if_name`: Specifies the network interface for listening and responding.
 *   `mac_addr`: Sets the MAC address for responses (or "auto" for the interface MAC).
 *   `[-]addr/mask...`: Specifies one or more target IP addresses, networks, or special targets:
-    *   `wg`: All IP addresses from all WireGuard interfaces.
-    *   `wg#`: IP addresses from a specific WireGuard interface (e.g., `wg0`).
+    *   `wg`: All IP addresses/networks from all WireGuard interfaces.
+    *   `wg#`: IP addresses/networks from a specific WireGuard interface (e.g., `wg0`).
     *   Prefix an address/network with `-` to exclude it from proxying.
 
 ## Compatibility
