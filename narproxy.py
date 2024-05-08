@@ -18,6 +18,10 @@ Examples:
   Exclude IP:   script.py em0 00:11:22:33:44:55 192.168.1.0/24 -192.168.1.100
   Auto MAC:     script.py em0 auto 192.168.1.0/24
   Verbose:      script.py -v em0 00:11:22:33:44:55 192.168.1.0/24
+  
+  # WireGuard examples:
+  All WG peers: script.py em0 00:11:22:33:44:55 wg
+  WG interface: script.py em0 00:11:22:33:44:55 wg0
 
 Options:
   -p, --pidfile PIDFILE: Specify a file to write the process ID (PID) to.
