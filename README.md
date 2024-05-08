@@ -49,43 +49,43 @@ pip install scapy asyncio ipaddress
 *   Proxy a single IPv4 address: 
 
 ```bash
-python narproxy.py eth0 00:11:22:33:44:55 192.168.1.100
+python narproxy.py em0 00:11:22:33:44:55 192.168.1.100
 ```
 
 *   Proxy an IPv4 subnet:
 
 ```bash
-python narproxy.py eth0 00:11:22:33:44:55 192.168.1.0/24
+python narproxy.py em0 00:11:22:33:44:55 192.168.1.0/24
 ```
 
 *   Proxy a single IPv6 address:
 
 ```bash
-python narproxy.py eth0 00:11:22:33:44:55 2001:db8::1 
+python narproxy.py em0 00:11:22:33:44:55 2001:db8::1 
 ```
 
 *   Proxy an IPv6 subnet:
 
 ```bash
-python narproxy.py eth0 00:11:22:33:44:55 2001:db8::/64 
+python narproxy.py em0 00:11:22:33:44:55 2001:db8::/64 
 ```
 
 *   Exclude an IP address from being proxied:
 
 ```bash
-python narproxy.py eth0 00:11:22:33:44:55 192.168.1.0/24 -192.168.1.100 
+python narproxy.py em0 00:11:22:33:44:55 192.168.1.0/24 -192.168.1.100 
 ```
 
 *   Use the interface MAC address automatically:
 
 ```python
-python narproxy.py eth0 auto 192.168.1.0/24
+python narproxy.py em0 auto 192.168.1.0/24
 ```
 
 *   Enable verbose logging:
 
 ```bash
-python narproxy.py -v eth0 00:11:22:33:44:55 192.168.1.0/24
+python narproxy.py -v em0 00:11:22:33:44:55 192.168.1.0/24
 ```
 
 ## Compatibility
