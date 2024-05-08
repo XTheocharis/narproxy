@@ -1,14 +1,13 @@
 # narproxy - Network Address Response Proxy
 
-`narproxy` is a Python script for OPNsense, pfSense, and FreeBSD 13.x systems. It handles network address resolution requests (ARP and NDP) for specified IP addresses or networks, simulating device presence on a network or managing address resolution for virtual/containerized environments.
+`narproxy` is a Python script that conditionally responds to network address resolution requests (ARP and NDP) for specified IP addresses or networks, simulating device presence on a network or managing address resolution for virtual/containerized environments.
 
 ## Features
 
-*   Handles ARP and NDP requests for specified IP addresses or subnets
-*   Supports IPv4 and IPv6 address resolution
-*   Retrieves target IP addresses from WireGuard interfaces automatically
-*   Excludes specific IP addresses or networks from proxying
-*   Provides verbose logging for debugging
+*   Responds to ARP and NDP requests for specified IP addresses or subnets only if no other device responds first.
+*   Supports automatically retrieving target IP addresses and subnets from WireGuard interfaces.
+*   Supports IPv4 and IPv6
+*   Supports excluding specific IP addresses or ranges from proxying
 
 ## Requirements
 
@@ -44,7 +43,7 @@
 *   pfSense 2.7.x
 *   FreeBSD 13.x
 
-Compatibility with other systems or versions is not tested.
+Compatibility with other operating systems or versions is not tested.
 
 ## License
 
