@@ -11,13 +11,13 @@ owner of the IP is not present on the network.
 Usage: narproxy.py [-p PIDFILE] [-v] if_name mac_addr [-]addr/mask...
 
 Examples:
-  IPv4 IP:      script.py eth0 00:11:22:33:44:55 192.168.1.100
-  IPv4 subnet:  script.py eth0 00:11:22:33:44:55 192.168.1.0/24
-  IPv6 IP:      script.py eth0 00:11:22:33:44:55 2001:db8::1
-  IPv6 subnet:  script.py eth0 00:11:22:33:44:55 2001:db8::/64
-  Exclude IP:   script.py eth0 00:11:22:33:44:55 192.168.1.0/24 -192.168.1.100
-  Auto MAC:     script.py eth0 auto 192.168.1.0/24
-  Verbose:      script.py -v eth0 00:11:22:33:44:55 192.168.1.0/24
+  IPv4 IP:      script.py em0 00:11:22:33:44:55 192.168.1.100
+  IPv4 subnet:  script.py em0 00:11:22:33:44:55 192.168.1.0/24
+  IPv6 IP:      script.py em0 00:11:22:33:44:55 2001:db8::1
+  IPv6 subnet:  script.py em0 00:11:22:33:44:55 2001:db8::/64
+  Exclude IP:   script.py em0 00:11:22:33:44:55 192.168.1.0/24 -192.168.1.100
+  Auto MAC:     script.py em0 auto 192.168.1.0/24
+  Verbose:      script.py -v em0 00:11:22:33:44:55 192.168.1.0/24
 
 Options:
   -p, --pidfile PIDFILE: Specify a file to write the process ID (PID) to.
@@ -276,15 +276,15 @@ class NarProxyUtils:
         """Prints the usage information for the script."""
         print("Usage: narproxy.py [-p PIDFILE] [-v] if_name mac_addr [-]addr/mask...")
         print("Examples:")
-        print("  IPv4 IP:\t script.py eth0 00:11:22:33:44:55 192.168.1.100")
-        print("  IPv4 subnet:\t script.py eth0 00:11:22:33:44:55 192.168.1.0/24")
-        print("  IPv6 IP:\t script.py eth0 00:11:22:33:44:55 2001:db8::1")
-        print("  IPv6 subnet:\t script.py eth0 00:11:22:33:44:55 2001:db8::/64")
+        print("  IPv4 IP:\t script.py em0 00:11:22:33:44:55 192.168.1.100")
+        print("  IPv4 subnet:\t script.py em0 00:11:22:33:44:55 192.168.1.0/24")
+        print("  IPv6 IP:\t script.py em0 00:11:22:33:44:55 2001:db8::1")
+        print("  IPv6 subnet:\t script.py em0 00:11:22:33:44:55 2001:db8::/64")
         print(
-            "  Exclude IP:\t script.py eth0 00:11:22:33:44:55 192.168.1.0/24 -192.168.1.100"
+            "  Exclude IP:\t script.py em0 00:11:22:33:44:55 192.168.1.0/24 -192.168.1.100"
         )
-        print("  Auto MAC:\t script.py eth0 auto 192.168.1.0/24")
-        print("  Verbose:\t script.py -v eth0 00:11:22:33:44:55 192.168.1.0/24")
+        print("  Auto MAC:\t script.py em0 auto 192.168.1.0/24")
+        print("  Verbose:\t script.py -v em0 00:11:22:33:44:55 192.168.1.0/24")
 
 
 class RouteManager:
