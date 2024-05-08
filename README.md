@@ -12,15 +12,15 @@
 ## Requirements
 
 *   Python 3.x
-*   Scapy, asyncio, ipaddress libraries
+*   Scapy, asyncio, and ipaddress
 *   FreeBSD 13.x compatible OS
 
 ## Installation
 
 1.  Clone the repository or download `narproxy.py`.
-2.  Install dependencies with `pip install scapy asyncio ipaddress`.
-3.  Verify correct paths for `wg` and `route` commands on FreeBSD-based systems. Modify the script if necessary.
-4.  Grant root privileges to the script for network interface and routing interaction.
+2.  Install scapy with `pip install scapy`.
+3.  Verify correct paths for `wg` and `route` commands. Modify the script if necessary.
+4.  Run the script with sufficient permissions for network interface and routing interaction.
 
 ## Usage
 
@@ -51,10 +51,8 @@ This project is under the [MIT License](LICENSE).
 
 ## Contributing 
 
-Contributions are welcome! Please open an issue or submit a pull request on the GitHub repository for any issues or improvement suggestions.
+Please open an issue or submit a pull request on the GitHub repository for any issues or improvement suggestions.
 
 ## Acknowledgements
 
-*   `narproxy` uses the Scapy library for packet manipulation and sending/receiving.
-*   The asyncio library enables asynchronous processing and concurrency.
-*   The ipaddress library manages IP address and network manipulation.
+*   `narproxy` uses the [Scapy](https://scapy.net/) library for packet manipulation and sending/receiving.
