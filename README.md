@@ -13,7 +13,7 @@
 
 *   Python 3.x
 *   Scapy, asyncio, ipaddress libraries
-*   OPNsense 2.4.x, pfSense 2.7.x, or FreeBSD 13.x OS
+*   FreeBSD 13.x compatible OS
 
 ## Installation
 
