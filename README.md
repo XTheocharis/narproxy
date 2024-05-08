@@ -10,7 +10,7 @@ narproxy is a Python script that acts as a proxy for responding to network addre
 *   Allows excluding specific IP addresses or networks from being proxied
 *   Performs periodic cleanup of expired IP address data
 *   Supports verbose logging for debugging purposes
-*   Designed for and tested on OPNsense, pfSense, and FreeBSD 13.x systems
+*   Designed for OPNsense, pfSense, and FreeBSD 13.x systems
 
 ## Requirements
 
@@ -90,7 +90,7 @@ python narproxy.py -v eth0 00:11:22:33:44:55 192.168.1.0/24
 
 ## Compatibility
 
-narproxy is designed for and tested on the following systems:
+narproxy is designed for the following systems:
 
 *   OPNsense 2.4.1 
 *   pfSense 2.7.2
